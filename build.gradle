@@ -25,21 +25,10 @@ repositories {
 dependencies {
     implementation group: 'com.google.guava', name: 'guava', version: '30.1.1-jre'
     implementation 'org.jetbrains:annotations:20.1.0'
-    implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.4.1'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
-
     compileOnly 'org.projectlombok:lombok:1.18.22'
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
-    // https://mvnrepository.com/artifact/software.amazon.awssdk/bom
-    runtimeOnly 'software.amazon.awssdk:bom:2.17.154'
-    // https://mvnrepository.com/artifact/software.amazon.awssdk/s3
-    testImplementation 'software.amazon.awssdk:s3:2.17.154'
-    // https://mvnrepository.com/artifact/software.amazon.awssdk/s3control
-    implementation 'software.amazon.awssdk:s3control:2.16.36'
-    // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-sqs
-    implementation 'com.amazonaws:aws-java-sdk-sqs:1.12.196'
-    // https://mvnrepository.com/artifact/org.json/json
     implementation 'org.json:json:20220320'
 
 }
